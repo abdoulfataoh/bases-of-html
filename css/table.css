@@ -1,0 +1,23 @@
+table {
+    border: 2px solid black;
+    width: 80%;
+    border-collapse: collapse;
+}
+
+table td, th {
+    border: 1px solid black;
+}
+
+table caption {
+    font-weight: bold;
+}
+
+table tr:hover {
+    background-color: red;
+    color: white;
+}
+
+table th {
+    background-color: #17376e;
+    color: white;
+}

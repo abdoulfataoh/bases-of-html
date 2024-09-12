@@ -1,0 +1,40 @@
+.calculator-container {
+    border: 2px solid gray;
+    width: 23%;
+    display: grid;
+    grid-template-columns:25% 25% 25% 25%;
+    /* https://cssgradient.io */
+    background: -webkit-linear-gradient(0deg, rgba(34,193,195,1) 0%, rgba(130,253,45,0.48800770308123254) 100%);
+}
+
+.calculator-container .touch {
+    aspect-ratio: 1 / 0.6; /* https://eleif.net/photomeasure */
+    background-color: #403745;
+    color: white;
+    font-weight: bold;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 10%;  
+    cursor: pointer;
+}
+
+.calculator-container .touch:hover {
+    background-color: green;
+}
+
+.calculator-container .equal{
+    background-color: orange;
+}
+
+.calculator-container .screen {
+    aspect-ratio: 1 / 0.6;
+    grid-column: 1 / 5;
+    color: red;
+    font-weight: bold;
+    display: flex;
+    justify-content: flex-end;
+    font-size: 22px;
+    align-items: flex-end;
+    padding: 5px;
+}

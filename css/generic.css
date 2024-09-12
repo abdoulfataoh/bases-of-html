@@ -1,0 +1,30 @@
+#message {
+    display: none;
+}
+/* 
+@media (min-width: 768px) {
+    body {
+      background-color: lightgreen;
+      font-size: 32px;
+    }
+  }
+
+@media (max-width: 360px) {
+body {
+    table {
+        display: none;
+    }
+}
+} */
+
+.rouge {
+    color: red;
+}
+
+.vert {
+    color: green;
+}
+
+/* .tableau {
+    ...
+} */

@@ -1,0 +1,242 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>Cours IHM</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/header.css">
+    <link rel="stylesheet" href="css/table.css">
+    <link rel="stylesheet" href="css/flex.css">
+    <link rel="stylesheet" href="css/grid.css">
+    <link rel="stylesheet" href="css/form.css">
+    <link rel="stylesheet" href="css/generic.css">
+    <link rel="stylesheet" href="css/calculor.css">
+    <script type="text/javascript" src="scripts/script.js"></script>
+    <script type="text/javascript" src="scripts/calculator.js"></script>
+</head>
+
+<body>
+
+    <header>
+        <div id="logo">
+            <img src="images/logo.png" alt="logo">
+        </div>
+        
+        <div id="nav">
+            <ul>
+                <li><a href="#">Inscriptions</a></li>
+                <li><a href="#">Formations</a></li>
+                <li><a href="#">Enseignants</a></li>
+                <li><a href="#">Contact</a></li>
+                <li><a href="#">Conexion</a></li>
+            </ul>
+        </div>
+    </header>
+    
+    <main>
+        <h2>Les elements du langage HTML</h2>
+        <p class="rouge">
+            Duis adipisicing laboris irure veniam duis reprehenderit pariatur ex dolore eiusmod aute. Deserunt veniam elit aliqua ad cupidatat fugiat aliqua magna. Nostrud qui esse minim deserunt dolor aliqua occaecat quis elit commodo nostrud elit. Aute aliqua deserunt dolore adipisicing Lorem Lorem nisi. Enim nulla officia dolore elit do laborum laborum nisi nostrud. Do nisi duis tempor sit dolore sint cillum. Duis quis nisi pariatur exercitation ut id irure tempor incididunt ipsum excepteur.
+
+Laboris ea tempor do magna aliquip commodo cillum velit sint aute amet anim eu. Commodo nulla consequat enim proident sint. Nostrud pariatur ex deserunt enim. Deserunt sunt voluptate ex aute ea Lorem nulla. Velit exercitation consequat deserunt mollit esse magna consequat aute veniam aliqua cupidatat consequat dolor.
+        </p>
+
+        <h3>Les attributes</h3>
+        <p class="vert">Magna ipsum ad est fugiat elit eu nulla et anim do. Sint anim commodo nostrud excepteur quis labore excepteur tempor esse deserunt amet ea. Ullamco minim amet nulla proident eu excepteur et et dolor laborum ex do nulla ut.
+
+Adipisicing occaecat deserunt minim sit voluptate ullamco sit enim aliqua. Aliqua voluptate sit non duis veniam est. Laboris Lorem aliqua elit dolore aute. Cillum ea dolor proident consectetur ut tempor aute sit labore consequat tempor non ad officia. Velit proident irure nostrud non dolor anim anim.</p>
+    <hr>
+
+    <p>
+        Ceci est un <b>code source</b> en <em>python</em>
+    </p>
+    <code>
+        print('hello world!')
+    </code>
+
+    <h2>Les tableaux en HTML</h2>
+
+    <table class="table">
+        <caption>Liste des meilleurs etudiants</caption>
+        <thead>
+            <tr>
+                <th>Nom</th>
+                <th>Prenom</th>
+                <th>Filiere</th>
+                <th>Moyenne</th>
+                <th>Mention</th>
+            </tr>
+        </thead>
+
+        <tbody>
+            <tr>
+                <td>KABORE</td>
+                <td>Alizeta</td>
+                <td>Genie Logiciel</td>
+                <td>18.50</td>
+                <td>Très Bien</td>
+            </tr>
+
+            <tr>
+                <td>TRAORE</td>
+                <td>Rahim</td>
+                <td>Intelligence Artifielle</td>
+                <td>14</td>
+                <td>Bien</td>
+            </tr>
+        </tbody>
+
+        <tfoot>
+            <tr>
+                <td>Nom</td>
+                <td>Prenom</td>
+                <td>Filiere</td>
+                <td>Moyenne</td>
+                <td>Mention</td>
+            </tr>
+        </tfoot>
+    </table>
+
+    <h2>Flex Box</h2>
+
+    <div class="flex-container">
+        <div class="flex-item">1</div>
+        <div class="flex-item">2</div>
+        <div class="flex-item">3</div>
+    </div>
+
+    <h2>Grid Box</h2>
+
+    <div class="grid-container">
+        <div class="grid-item" id="first">0</div>
+        <div class="grid-item">1</div>
+        <div class="grid-item">2</div>
+        <div class="grid-item">3</div>
+        <div class="grid-item">4</div>
+        <div class="grid-item">5</div>
+        <div class="grid-item">6</div>
+        <div class="grid-item">7</div>
+        <div class="grid-item">8</div>
+        <div class="grid-item">9</div>
+    </div>
+
+    <h2>Forms</h2>
+    <h3 id="message"></h3>
+    <form action="https://run.mocky.io/v3/393cb8d0-965a-4d07-9f29-762fb28d699a" method="get">
+        <div>
+            <label>Nom de la formation</label>
+            <input type="text" id="nom_formation" name="training_name" placeholder="Entre votre nom">
+        </div>
+
+        <div>
+            <label>Nom <span class="requiered-field">*</span></label>
+            <input type="text" id="nom" name="first_name" required>
+        </div>
+
+        <div>
+            <label>Prenom<span class="requiered-field">*</span></label>
+            <input type="text" id="prenom" name="second_name" maxlength="10" minlength="5" required>
+        </div>
+
+        <div>
+            <label>Date de naissance</label>
+            <input type="date" id="date" name="date">
+        </div>
+
+        <div>
+            <label>Genre</label>
+            <input type="radio" id="genre" name="gender" value="Homme"> Homme
+            <input type="radio" id="genre" name="gender" value="Femme"> Femme
+        </div>
+
+        <div>
+            <label>Adresse</label>
+            <input type="text" id="adresse" name="adress" value="pissy" readonly>
+        </div>
+
+        <div>
+            <label>code</label>
+            <input type="text" id="code_postale" name="zip_code">
+        </div>
+
+        <div>
+            <label>Pays</label>
+            <select id="pays" name="country">
+                <option value="Mali">Mali - ML</option>
+                <option value="Niger">Niger - NG</option>
+                <option value="Togo">Togo - TG</option>
+                <option value="Burkina" selected>Burkina - BF</option>
+            </select>
+        </div>
+
+        <div>
+            <label>Ville</label>
+            <select id="ville" name="city">
+                <option>Ouaga</option>
+                <option>Niamey</option>
+                <option>Lome</option>
+                <option>Bamako</option>
+            </select>
+        </div>
+
+    
+        <div>
+            <label>E-mail</label>
+            <input type="email" id="email" name="email" placeholder="user@mail.test">
+        </div>
+
+        <div>
+            <label>Telephone</label>
+            <input type="text" id="telephone" name="phone">
+        </div>
+
+        <div>
+            <label>Photo d'identite</label>
+            <input type="file" id="photo" name="profile_picture" accept="image/png">
+        </div>
+
+        <div>
+            <input type="submit" value="Soumetre">
+            <input type="reset">
+        </div>
+    </form>
+
+    <h2>Calculator App</h2>
+
+    <div class="calculator-container">
+        <div class="screen"></div>
+
+        <div class="touch">%</div>
+        <div class="touch">CE</div>
+        <div class="touch clear">C</div>
+        <div class="touch backspace">←</div>
+
+        <div class="touch">1/x</div>
+        <div class="touch">x^2</div>
+        <div class="touch">2Vx</div>
+        <div class="touch operator">/</div>
+
+        <div class="touch digit">7</div>
+        <div class="touch digit">8</div>
+        <div class="touch digit">9</div>
+        <div class="touch operator">*</div>
+
+        <div class="touch digit">4</div>
+        <div class="touch digit">5</div>
+        <div class="touch digit">6</div>
+        <div class="touch operator">-</div>
+
+        <div class="touch digit">1</div>
+        <div class="touch digit">2</div>
+        <div class="touch digit">3</div>
+        <div class="touch operator">+</div>
+
+        <div class="touch">+/-</div>
+        <div class="touch digit">0</div>
+        <div class="touch digit">.</div>
+        <div class="touch equal">=</div>
+    </div>
+
+</main>
+</body>
+</html>
